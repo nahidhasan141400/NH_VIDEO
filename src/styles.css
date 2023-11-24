@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #0f0f0f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  height: 100%;
+  position: relative;
+}
+.reset {
+  background-color: #00ff4c;
+  border: none;
+  color: #0055ff;
+  font-size: 17px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  transform-origin: 100% 0px;
+}
+.reset:hover {
+  transform: scale(200%);
+}
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  gap: 2px;
+}
+.past {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+.past h1 {
+  font-size: 12px;
+  text-align: center;
+  line-height: 14px;
+}
+.past span {
+  font-size: 30px;
+}
+
+.input {
+  position: fixed;
+  z-index: 300;
+  right: 0;
+}
+
+.input input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.nav {
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+}
+
+.nav button {
+  background-color: transparent;
+  border: none;
+  color: #f6f6f6;
+  font-size: 17px;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.w-full {
+  width: 100%;
+}
+.drag {
+  cursor: move;
+}
+
+.nav button#close {
+  background: #ff1a1a;
+}
+.nav button#max {
+  background: #1a85ff;
+}
+.nav button#min {
+  background: #fffb1a;
+}
+
+.nav button:hover {
+  filter: brightness(50%);
+}
+
+.flex {
+  display: flex;
+  gap: 4px;
+}
+h1 {
+  margin-top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #1d1d1da2;
+    backdrop-filter: blur(100px);
+  }
+}
